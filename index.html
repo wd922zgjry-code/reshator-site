@@ -4,10 +4,10 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Решатор: помощь с учебными работами</title>
-<meta name="description" content="Решения и чертежи по вашей методичке. Заявка за пару минут в Telegram.">
+<meta name="description" content="Решения и чертежи по вашему образцу. Заявка за пару минут в Telegram.">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Решатор: помощь с учебными работами">
-<meta property="og:description" content="Решения и чертежи по вашей методичке. Заявка за пару минут в Telegram.">
+<meta property="og:description" content="Решения и чертежи по вашему образцу. Заявка за пару минут в Telegram.">
 <meta property="og:image" content="https://wd922zgjry-code.github.io/reshator-site/og.png">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
@@ -152,8 +152,9 @@ h3{font-size:20px; line-height:1.25; font-weight:600}
 .grid{display:flex; flex-wrap:wrap; gap:20px}
 .tile{flex:1 1 240px; min-width:0; padding:26px; display:flex; flex-direction:column; gap:10px; background:var(--bg); transition:box-shadow .2s ease}
 .ico{width:34px; height:34px; flex:none; color:var(--accent)}
-.tile.row{flex-direction:row; align-items:center; gap:16px; padding:18px 22px; flex-basis:300px}
-.tile.row h3{font-size:19px}
+.tile.row{display:grid; grid-template-columns:34px minmax(0,1fr); align-items:center; column-gap:16px; padding:18px 22px; flex-basis:300px}
+.tile.row .ico{grid-column:1}
+.tile.row h3{grid-column:2; font-size:19px; min-width:0; overflow-wrap:anywhere}
 @media (hover:hover){ .js .tile.rv.in:hover{transform:translateY(-4px); box-shadow:0 14px 30px var(--shadow); transition-delay:0s} }
 
 /* что вы получаете */
@@ -294,8 +295,8 @@ details p{padding:0 0 22px; max-width:680px; animation:fade .3s ease}
 <main id="top">
 <section class="wrap hero">
   <div class="hero-left">
-    <h1 class="rv">Решения и чертежи <span class="hl">по вашей методичке</span></h1>
-    <p class="lead rv">Выполняю учебные работы так, как требует ваш преподаватель: с рисунками и оформлением по образцу. Заказ и общение проходят в Telegram.</p>
+    <h1 class="rv">Решения и чертежи <span class="hl">по вашему образцу</span></h1>
+    <p class="lead rv">Выполняю учебные работы так, как требует ваш преподаватель: с рисунками и аккуратным оформлением. Заказ и общение проходят в Telegram.</p>
     <div class="row rv">
       <a class="btn btn-main" href="https://t.me/reshator_help_bot">Оформить заказ в Telegram <svg class="arr" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
       <a class="btn btn-line" href="#how">Как это работает</a>
@@ -321,8 +322,8 @@ details p{padding:0 0 22px; max-width:680px; animation:fade .3s ease}
         <div class="m user"><div class="b">Новый заказ</div></div>
         <div class="m bot"><div class="b">По какому предмету нужна работа?</div><div class="kb"><span>Физика</span><span>Сопротивление материалов</span><span>Информатика</span><span>Другое</span></div></div>
         <div class="m user"><div class="b">Сопротивление материалов</div></div>
-        <div class="m bot"><div class="b">Опишите задание и пришлите методичку.</div></div>
-        <div class="m user"><div class="b"><div class="file"><i><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 3h7l5 5v13H7z"/></svg></i>методичка.pdf</div>Вариант 11, расчёт балки</div></div>
+        <div class="m bot"><div class="b">Опишите задание и пришлите образец.</div></div>
+        <div class="m user"><div class="b"><div class="file"><i><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 3h7l5 5v13H7z"/></svg></i>образец.pdf</div>Вариант 11, расчёт балки</div></div>
         <div class="m bot"><div class="b">К какому сроку вам нужна работа?</div><div class="kb"><span>Завтра</span><span>Через 3 дня</span><span>Через неделю</span></div></div>
         <div class="m user"><div class="b">Через 3 дня</div></div>
         <div class="m bot"><div class="b">Благодарю! Заявка принята. Скоро вернусь с оценкой стоимости.</div></div>
@@ -344,10 +345,10 @@ details p{padding:0 0 22px; max-width:680px; animation:fade .3s ease}
         <div class="stamp-grid">
           <div class="cell"><div class="k">Формат</div><div class="v">PDF-файл</div></div>
           <div class="cell"><div class="k">Структура</div><div class="v">Дано, Решение, Ответ</div></div>
-          <div class="cell"><div class="k">Оформление</div><div class="v">По вашей методичке</div></div>
-          <div class="cell"><div class="k">Рисунок</div><div class="v">Как в методичке</div></div>
-          <div class="cell"><div class="k">Пробный вариант</div><div class="v">До оплаты файла</div></div>
-          <div class="cell"><div class="k">Общение</div><div class="v">Прямо в Telegram</div></div>
+          <div class="cell"><div class="k">Оформление</div><div class="v">Под вашего преподавателя</div></div>
+          <div class="cell"><div class="k">Рисунки</div><div class="v">Чёткие, прямо в файле</div></div>
+          <div class="cell"><div class="k">Пробный вариант</div><div class="v">Покажу до выдачи файла</div></div>
+          <div class="cell"><div class="k">Общение</div><div class="v">Бот в Telegram</div></div>
           <div class="cell cell-full"><div class="k">Оплата</div><div class="v">50% → 20% → 30%</div></div>
         </div>
       </div>
@@ -382,7 +383,7 @@ details p{padding:0 0 22px; max-width:680px; animation:fade .3s ease}
       <div class="bar-labels"><div>Старт работы</div><div>Пробный вариант</div><div>После сдачи</div></div>
     </div>
     <div class="steps">
-      <div class="step rv"><div class="n">01</div><div><h3>Заявка в Telegram</h3><p class="muted">Выберите предмет, опишите задание, приложите методичку и укажите срок сдачи.</p></div></div>
+      <div class="step rv"><div class="n">01</div><div><h3>Заявка в Telegram</h3><p class="muted">Выберите предмет, опишите задание, приложите образец оформления и укажите срок сдачи.</p></div></div>
       <div class="step rv"><div class="n">02</div><div><h3>Стоимость</h3><p class="muted">Я называю цену. Если она не подходит, один раз можно предложить свою сумму.</p></div></div>
       <div class="step rv"><div class="n">03</div><div><h3>50% → старт работы</h3><p class="muted">Вы вносите 50% стоимости, и я сразу берусь за работу.</p></div></div>
       <div class="step rv"><div class="n">04</div><div><h3>20% → полный файл</h3><p class="muted">Когда работа готова, вы смотрите пробный вариант, вносите ещё 20% и получаете полный файл.</p></div></div>
@@ -394,7 +395,7 @@ details p{padding:0 0 22px; max-width:680px; animation:fade .3s ease}
 <section class="wrap section">
   <h2 class="rv">Спокойные условия</h2>
   <div class="grid">
-      <div class="frame tile rv"><svg class="ico" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 4h11l5 5v19H8z"/><path d="M19 4v5h5"/><path d="M12 16h8M12 21h8M12 26h5" style="stroke:var(--hot)"/></svg><h3>По вашей методичке</h3><p class="muted">Присылайте методичку и образец, оформление будет таким же.</p></div>
+      <div class="frame tile rv"><svg class="ico" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 4h11l5 5v19H8z"/><path d="M19 4v5h5"/><path d="M12 16h8M12 21h8M12 26h5" style="stroke:var(--hot)"/></svg><h3>Под ваши требования</h3><p class="muted">Присылайте образец и требования преподавателя, оформление будет таким же.</p></div>
       <div class="frame tile rv"><svg class="ico" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 27l1.2-6.3L21 6l5 5L11.3 25.8z"/><path d="M18 9l5 5" style="stroke:var(--hot)"/></svg><h3>Исправления</h3><p class="muted">Если я допустил ошибку или преподаватель указал на неточность в решении, поправлю.</p></div>
       <div class="frame tile rv"><svg class="ico" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5.5 16A10.5 10.5 0 1 0 9 8.2"/><path d="M5 4.5V10h5.5"/><path d="M16 10v6l4 3" style="stroke:var(--hot)"/></svg><h3>Возврат при срыве срока</h3><p class="muted">Если не успею по своей вине, верну всё, что вы оплатили.</p></div>
       <div class="frame tile rv"><svg class="ico" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="7" y="14" width="18" height="13" rx="2"/><path d="M11 14v-4a5 5 0 0 1 10 0v4"/><circle cx="16" cy="20.5" r="1.9" fill="var(--hot)" style="stroke:var(--hot)"/></svg><h3>Конфиденциальность</h3><p class="muted">Ваши данные и файлы остаются только между нами.</p></div>
