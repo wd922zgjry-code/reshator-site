@@ -3,6 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="color-scheme" content="dark">
+<meta name="theme-color" content="#08101F">
 <title>Решатор: помощь с учебными работами</title>
 <meta name="description" content="Решения и чертежи по вашему образцу. Заявка за пару минут в Telegram.">
 <meta property="og:type" content="website">
@@ -15,23 +17,11 @@
 <script>document.documentElement.className+=' js';</script>
 <style>
 :root{
-  --bg:#F6F8FB; --grid:rgba(29,78,216,.07); --grid2:rgba(29,78,216,.13);
-  --surface:#FFFFFF; --ink:#0B1424; --muted:#364154; --muted2:#465267;
-  --line:#CBD5E3; --line2:#9FB0C7; --accent:#1D4ED8; --btn:#1D4ED8; --hot:#C2410C;
-  --band:#0B1424; --focus:#F5A524; --shadow:rgba(11,20,36,.14); color-scheme:light dark;
-  box-sizing:border-box; padding-top:env(safe-area-inset-top,0px); padding-bottom:env(safe-area-inset-bottom,0px);
-}
-@media (prefers-color-scheme: dark){
-  :root:not([data-theme="light"]){
-    --bg:#08101F; --grid:rgba(123,167,255,.07); --grid2:rgba(123,167,255,.13);
-    --surface:#0F1A30; --ink:#E9EEF7; --muted:#B9C4D6; --muted2:#A3B0C6;
-    --line:#223250; --line2:#3A4F75; --accent:#7BA7FF; --btn:#2F63E0; --hot:#FF9A62; --band:#050A14; --shadow:rgba(0,0,0,.45);
-  }
-}
-:root[data-theme="dark"]{
   --bg:#08101F; --grid:rgba(123,167,255,.07); --grid2:rgba(123,167,255,.13);
   --surface:#0F1A30; --ink:#E9EEF7; --muted:#B9C4D6; --muted2:#A3B0C6;
-  --line:#223250; --line2:#3A4F75; --accent:#7BA7FF; --btn:#2F63E0; --hot:#FF9A62; --band:#050A14; --shadow:rgba(0,0,0,.45);
+  --line:#223250; --line2:#3A4F75; --accent:#7BA7FF; --btn:#2F63E0; --hot:#FF9A62;
+  --band:#050A14; --focus:#F5A524; --shadow:rgba(0,0,0,.45); color-scheme:dark;
+  box-sizing:border-box; padding-top:env(safe-area-inset-top,0px); padding-bottom:env(safe-area-inset-bottom,0px);
 }
 html{scroll-padding-top:env(safe-area-inset-top,0px); scroll-behavior:smooth}
 *,*::before,*::after{box-sizing:border-box}
@@ -324,8 +314,8 @@ details p{padding:0 0 22px; max-width:680px; animation:fade .3s ease}
         <div class="m user"><div class="b">Сопротивление материалов</div></div>
         <div class="m bot"><div class="b">Опишите задание и пришлите образец.</div></div>
         <div class="m user"><div class="b"><div class="file"><i><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 3h7l5 5v13H7z"/></svg></i>образец.pdf</div>Вариант 11, расчёт балки</div></div>
-        <div class="m bot"><div class="b">К какому сроку вам нужна работа?</div><div class="kb"><span>Завтра</span><span>Через 3 дня</span><span>Через неделю</span></div></div>
-        <div class="m user"><div class="b">Через 3 дня</div></div>
+        <div class="m bot"><div class="b">К какому сроку вам нужна работа? Выберите кнопкой или напишите свой срок.</div><div class="kb"><span>Сегодня</span><span>Завтра</span><span>Через 3 дня</span><span>Через неделю</span><span>Свой вариант</span></div></div>
+        <div class="m user"><div class="b">До 14 ноября, 18:00</div></div>
         <div class="m bot"><div class="b">Благодарю! Заявка принята. Скоро вернусь с оценкой стоимости.</div></div>
         <div class="typing"><i></i><i></i><i></i></div>
       </div>
@@ -383,7 +373,7 @@ details p{padding:0 0 22px; max-width:680px; animation:fade .3s ease}
       <div class="bar-labels"><div>Старт работы</div><div>Пробный вариант</div><div>После сдачи</div></div>
     </div>
     <div class="steps">
-      <div class="step rv"><div class="n">01</div><div><h3>Заявка в Telegram</h3><p class="muted">Выберите предмет, опишите задание, приложите образец оформления и укажите срок сдачи.</p></div></div>
+      <div class="step rv"><div class="n">01</div><div><h3>Заявка в Telegram</h3><p class="muted">Выберите предмет, опишите задание, приложите образец оформления и укажите срок сдачи: выберите кнопкой или напишите свой.</p></div></div>
       <div class="step rv"><div class="n">02</div><div><h3>Стоимость</h3><p class="muted">Я называю цену. Если она не подходит, один раз можно предложить свою сумму.</p></div></div>
       <div class="step rv"><div class="n">03</div><div><h3>50% → старт работы</h3><p class="muted">Вы вносите 50% стоимости, и я сразу берусь за работу.</p></div></div>
       <div class="step rv"><div class="n">04</div><div><h3>20% → полный файл</h3><p class="muted">Когда работа готова, вы смотрите пробный вариант, вносите ещё 20% и получаете полный файл.</p></div></div>
