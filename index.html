@@ -4,32 +4,39 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Решатор: помощь с учебными работами</title>
-<link rel="icon" href="data:image/svg+xml,%3Csvg%20viewBox%3D%220%200%2064%2064%22%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%3E%3Cpath%20d%3D%22M32%2013V8%22%20stroke%3D%22%2360A0FF%22%20stroke-width%3D%223%22%20stroke-linecap%3D%22round%22/%3E%3Ccircle%20cx%3D%2232%22%20cy%3D%226%22%20r%3D%223.4%22%20fill%3D%22%23FF9A62%22/%3E%3Crect%20x%3D%223%22%20y%3D%2229%22%20width%3D%226%22%20height%3D%2215%22%20rx%3D%222.5%22%20fill%3D%22%231E48BE%22/%3E%3Crect%20x%3D%2255%22%20y%3D%2229%22%20width%3D%226%22%20height%3D%2215%22%20rx%3D%222.5%22%20fill%3D%22%231E48BE%22/%3E%3Crect%20x%3D%228%22%20y%3D%2213%22%20width%3D%2248%22%20height%3D%2243%22%20rx%3D%2213%22%20fill%3D%22%232F63E0%22/%3E%3Cpath%20d%3D%22M8%2026a13%2013%200%200%201%2013-13h22a13%2013%200%200%201%2013%2013z%22%20fill%3D%22%235082F5%22/%3E%3Crect%20x%3D%2214%22%20y%3D%2222%22%20width%3D%2236%22%20height%3D%2228%22%20rx%3D%2210%22%20fill%3D%22%230B1424%22/%3E%3Ccircle%20cx%3D%2225%22%20cy%3D%2233%22%20r%3D%225.2%22%20fill%3D%22%23fff%22/%3E%3Ccircle%20cx%3D%2239%22%20cy%3D%2233%22%20r%3D%225.2%22%20fill%3D%22%23fff%22/%3E%3Ccircle%20cx%3D%2225.6%22%20cy%3D%2234%22%20r%3D%222.7%22%20fill%3D%22%232F63E0%22/%3E%3Ccircle%20cx%3D%2239.6%22%20cy%3D%2234%22%20r%3D%222.7%22%20fill%3D%22%232F63E0%22/%3E%3Ccircle%20cx%3D%2226.4%22%20cy%3D%2232.8%22%20r%3D%221%22%20fill%3D%22%23fff%22/%3E%3Ccircle%20cx%3D%2240.4%22%20cy%3D%2232.8%22%20r%3D%221%22%20fill%3D%22%23fff%22/%3E%3Cpath%20d%3D%22M24%2042.5q8%206%2016%200%22%20fill%3D%22none%22%20stroke%3D%22%23FF9A62%22%20stroke-width%3D%223%22%20stroke-linecap%3D%22round%22/%3E%3Ccircle%20cx%3D%2219.5%22%20cy%3D%2242%22%20r%3D%221.9%22%20fill%3D%22%23FF9A62%22%20opacity%3D%22.55%22/%3E%3Ccircle%20cx%3D%2244.5%22%20cy%3D%2242%22%20r%3D%221.9%22%20fill%3D%22%23FF9A62%22%20opacity%3D%22.55%22/%3E%3C/svg%3E">
+<meta name="description" content="Решения и чертежи по вашей методичке. Заявка за пару минут в Telegram.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Решатор: помощь с учебными работами">
+<meta property="og:description" content="Решения и чертежи по вашей методичке. Заявка за пару минут в Telegram.">
+<meta property="og:image" content="https://wd922zgjry-code.github.io/reshator-site/og.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Sans+Condensed:wght@600;700&family=IBM+Plex+Mono:wght@500&display=swap">
+<script>document.documentElement.className+=' js';</script>
 <style>
 :root{
   --bg:#F6F8FB; --grid:rgba(29,78,216,.07); --grid2:rgba(29,78,216,.13);
   --surface:#FFFFFF; --ink:#0B1424; --muted:#364154; --muted2:#465267;
   --line:#CBD5E3; --line2:#9FB0C7; --accent:#1D4ED8; --btn:#1D4ED8; --hot:#C2410C;
-  --band:#0B1424; --focus:#F5A524; color-scheme:light dark;
+  --band:#0B1424; --focus:#F5A524; --shadow:rgba(11,20,36,.14); color-scheme:light dark;
   box-sizing:border-box; padding-top:env(safe-area-inset-top,0px); padding-bottom:env(safe-area-inset-bottom,0px);
 }
 @media (prefers-color-scheme: dark){
   :root:not([data-theme="light"]){
     --bg:#08101F; --grid:rgba(123,167,255,.07); --grid2:rgba(123,167,255,.13);
     --surface:#0F1A30; --ink:#E9EEF7; --muted:#B9C4D6; --muted2:#A3B0C6;
-    --line:#223250; --line2:#3A4F75; --accent:#7BA7FF; --btn:#2F63E0; --hot:#FF9A62; --band:#050A14;
+    --line:#223250; --line2:#3A4F75; --accent:#7BA7FF; --btn:#2F63E0; --hot:#FF9A62; --band:#050A14; --shadow:rgba(0,0,0,.45);
   }
 }
 :root[data-theme="dark"]{
   --bg:#08101F; --grid:rgba(123,167,255,.07); --grid2:rgba(123,167,255,.13);
   --surface:#0F1A30; --ink:#E9EEF7; --muted:#B9C4D6; --muted2:#A3B0C6;
-  --line:#223250; --line2:#3A4F75; --accent:#7BA7FF; --btn:#2F63E0; --hot:#FF9A62; --band:#050A14;
+  --line:#223250; --line2:#3A4F75; --accent:#7BA7FF; --btn:#2F63E0; --hot:#FF9A62; --band:#050A14; --shadow:rgba(0,0,0,.45);
 }
 html{scroll-padding-top:env(safe-area-inset-top,0px); scroll-behavior:smooth}
 *,*::before,*::after{box-sizing:border-box}
 body{
-  margin:0; color:var(--ink); font-family:'IBM Plex Sans',system-ui,sans-serif; line-height:1.55;
+  margin:0; color:var(--ink); font-family:'IBM Plex Sans',system-ui,sans-serif; line-height:1.55; overflow-x:hidden;
   background-color:var(--bg);
   background-image:linear-gradient(var(--grid) 1px,transparent 1px),linear-gradient(90deg,var(--grid) 1px,transparent 1px),
     linear-gradient(var(--grid2) 1px,transparent 1px),linear-gradient(90deg,var(--grid2) 1px,transparent 1px);
@@ -45,64 +52,132 @@ h1{font-size:clamp(42px,7vw,76px); line-height:1.02; font-weight:700}
 h2{font-size:clamp(32px,4.6vw,46px); line-height:1.08; font-weight:700}
 h3{font-size:20px; line-height:1.25; font-weight:600}
 .muted{color:var(--muted)}
-.hl{text-decoration:underline; text-decoration-color:var(--hot); text-decoration-thickness:.08em; text-underline-offset:.12em; text-decoration-skip-ink:none}
+
+/* прогресс чтения */
+#bar{position:fixed; left:0; right:0; top:env(safe-area-inset-top,0px); height:3px; z-index:40; background:var(--hot); transform:scaleX(0); transform-origin:0 50%; pointer-events:none}
+
+/* листы на фоне */
+.bg-sheets{position:fixed; inset:0; overflow:hidden; z-index:0; pointer-events:none}
+.page{position:relative; z-index:1}
+.sheet{position:absolute; width:clamp(150px,17vw,250px); aspect-ratio:210/297; background:var(--surface); color:var(--line2);
+  border:1px solid var(--line2); border-radius:3px; box-shadow:0 14px 34px var(--shadow); transform:rotate(var(--r,0deg)); will-change:transform}
+.sheet svg{display:block; width:100%; height:100%}
+.s-a{left:-3vw; top:16vh; --r:-8deg}
+.s-b{right:-3vw; top:9vh; --r:7deg}
+.s-c{left:3vw; top:64vh; --r:5deg}
+.s-d{right:4vw; top:60vh; --r:-6deg}
+@media (max-width:900px){ .s-a{left:-90px; top:30vh} .s-b{right:-90px; top:10vh} .s-c,.s-d{display:none} }
 
 /* кнопки */
-.btn{display:inline-flex; align-items:center; justify-content:center; min-height:52px; padding:0 28px; border-radius:6px;
-  font-weight:600; font-size:17px; text-decoration:none; transition:transform .15s ease, box-shadow .15s ease}
-.btn-main{background:var(--btn); color:#FFFFFF; box-shadow:0 2px 0 rgba(0,0,0,.25)}
-.btn-main:hover{transform:translateY(-2px); box-shadow:0 5px 0 rgba(0,0,0,.25)}
+.btn{position:relative; overflow:hidden; display:inline-flex; align-items:center; justify-content:center; gap:10px; min-height:52px; padding:0 28px; border-radius:8px;
+  font-weight:600; font-size:17px; text-decoration:none; transition:transform .15s ease, box-shadow .15s ease, border-color .15s}
+.btn .arr{transition:transform .2s ease}
+.btn-main{background:var(--btn); color:#FFFFFF; box-shadow:0 3px 0 rgba(0,0,0,.28)}
+.btn-main::after{content:""; position:absolute; top:0; bottom:0; left:-60%; width:40%; background:linear-gradient(100deg,transparent,rgba(255,255,255,.28),transparent); transform:skewX(-20deg)}
+.btn-main:hover{transform:translateY(-2px); box-shadow:0 6px 0 rgba(0,0,0,.28)}
+.btn-main:hover .arr{transform:translateX(4px)}
+.btn-main:hover::after{left:130%; transition:left .7s ease}
+.btn-main:active{transform:translateY(1px); box-shadow:0 1px 0 rgba(0,0,0,.28)}
 .btn-line{border:1.5px solid var(--line2); color:var(--ink); background:var(--surface)}
 .btn-line:hover{border-color:var(--accent)}
 .btn-small{min-height:44px; padding:0 18px; font-size:16px; border:1.5px solid var(--ink); color:var(--ink); background:var(--surface)}
-.btn-light{background:#FFFFFF; color:#0B1424}
-.btn-light:hover{transform:translateY(-2px)}
-@media (prefers-reduced-motion: reduce){.btn,.btn:hover{transition:none; transform:none}}
+.btn-light{background:#FFFFFF; color:#0B1424; box-shadow:0 3px 0 rgba(0,0,0,.35)}
+.btn-light:hover{transform:translateY(-2px); box-shadow:0 6px 0 rgba(0,0,0,.35)}
+.btn-light:hover .arr{transform:translateX(4px)}
 
 /* шапка */
-.header{display:flex; flex-wrap:wrap; align-items:center; justify-content:space-between; gap:16px; padding-top:20px; padding-bottom:20px}
-.brand{display:flex; align-items:center; gap:10px; font-family:'IBM Plex Sans Condensed',sans-serif; font-size:22px; font-weight:700}
-.brand svg{color:var(--accent)}
+.header{display:flex; align-items:center; justify-content:space-between; gap:16px; padding-top:20px; padding-bottom:20px}
+.brand{display:flex; align-items:center; gap:10px; font-family:'IBM Plex Sans Condensed',sans-serif; font-size:24px; font-weight:700; text-decoration:none}
+.brand svg{width:40px; height:40px}
+.nav{display:flex; gap:26px; font-size:16px}
+.nav a{text-decoration:none; color:var(--muted); padding:8px 0; border-bottom:2px solid transparent; transition:color .15s, border-color .15s}
+.nav a:hover{color:var(--ink); border-color:var(--hot)}
+@media (max-width:860px){ .nav{display:none} }
 
-/* рамка с угловыми метками, как на чертеже */
+/* появление при прокрутке */
+.js .rv{opacity:0; transform:translateY(18px); transition:opacity .6s ease, transform .6s cubic-bezier(.2,.7,.2,1); transition-delay:calc(var(--i,0) * 70ms)}
+.js .rv.in{opacity:1; transform:none}
+
+/* рамка с угловыми метками */
 .frame{position:relative; background:var(--surface); border:1px solid var(--line2); border-radius:4px}
-.frame::before,.frame::after{content:""; position:absolute; width:16px; height:16px; pointer-events:none}
+.frame::before,.frame::after{content:""; position:absolute; width:16px; height:16px; pointer-events:none; transition:width .25s ease, height .25s ease}
 .frame::before{top:-2px; left:-2px; border-top:3px solid var(--accent); border-left:3px solid var(--accent)}
 .frame::after{bottom:-2px; right:-2px; border-bottom:3px solid var(--hot); border-right:3px solid var(--hot)}
+.frame:hover::before,.frame:hover::after{width:26px; height:26px}
 
 /* главный экран */
-.hero{display:flex; flex-wrap:wrap; gap:56px; align-items:center; padding-top:48px; padding-bottom:88px}
-.hero-left{flex:1 1 500px; min-width:0; display:flex; flex-direction:column; gap:26px}
+.hero{display:flex; flex-wrap:wrap; gap:48px; align-items:center; padding-top:40px; padding-bottom:88px}
+.hero-left{flex:1 1 480px; min-width:0; display:flex; flex-direction:column; gap:26px}
+.hl{background:linear-gradient(var(--hot),var(--hot)) 0 100%/0 .09em no-repeat; -webkit-box-decoration-break:clone; box-decoration-break:clone; padding-bottom:.06em; animation:sweep 1s .7s ease forwards}
+@keyframes sweep{to{background-size:100% .09em}}
 .lead{font-size:20px; color:var(--muted); max-width:580px}
 .row{display:flex; flex-wrap:wrap; gap:12px}
 .note{font-size:15px; color:var(--muted2); display:flex; align-items:center; gap:10px}
 .note::before{content:""; width:28px; height:0; border-top:2px solid var(--hot); flex:none}
 
-/* основная надпись */
-.stamp{flex:1 1 360px; min-width:0}
-.stamp-head{padding:14px 20px; border-bottom:1px solid var(--line2)}
-.stamp-grid{display:flex; flex-wrap:wrap}
-.cell{flex:1 1 50%; min-width:160px; padding:16px 20px; border-bottom:1px solid var(--line); border-right:1px solid var(--line)}
-.cell:nth-child(2n){border-right:0}
-.cell .k{font-family:'IBM Plex Mono',monospace; font-weight:500; font-size:11px; letter-spacing:.08em; color:var(--muted2); text-transform:uppercase}
-.cell .v{font-size:18px; font-weight:600; line-height:1.3; margin-top:4px}
-.cell-full{flex:1 1 100%; border-right:0; border-bottom:0; background:var(--bg)}
-.cell-full .v{color:var(--accent); font-family:'IBM Plex Mono',monospace}
+/* телефон с диалогом */
+.phone-wrap{flex:0 1 340px; min-width:0; display:flex; flex-direction:column; align-items:center; gap:14px; margin:0 auto}
+.phone{width:100%; max-width:330px; background:#0E1621; border:9px solid #1B2635; border-radius:40px; overflow:hidden;
+  box-shadow:0 30px 60px var(--shadow), 0 0 0 1px var(--line2); transform:rotate(2deg); transition:transform .4s ease; animation:float 6s ease-in-out infinite}
+.phone:hover{transform:rotate(0deg)}
+@keyframes float{0%,100%{translate:0 0}50%{translate:0 -8px}}
+.ph-head{display:flex; align-items:center; gap:10px; padding:12px 14px; background:#17212B; border-bottom:1px solid #0A1018}
+.ph-head svg{width:36px; height:36px; flex:none}
+.ph-head b{display:block; color:#fff; font-size:15px; line-height:1.2}
+.ph-head small{color:#6D7F8F; font-size:12px}
+.chat{height:430px; overflow:hidden; display:flex; flex-direction:column; justify-content:flex-end; gap:8px; padding:12px}
+.chat.static{height:auto}
+.m{display:none; max-width:88%}
+.m.vis,.chat.static .m{display:block; animation:pop .35s ease}
+@keyframes pop{from{opacity:0; transform:translateY(8px) scale(.97)}to{opacity:1; transform:none}}
+.m.bot{align-self:flex-start}
+.m.user{align-self:flex-end}
+.b{padding:8px 12px; border-radius:14px; font-size:14px; line-height:1.4; color:#E8EEF4}
+.bot .b{background:#182533; border-bottom-left-radius:4px}
+.user .b{background:#2B5278; border-bottom-right-radius:4px}
+.kb{display:flex; flex-wrap:wrap; gap:4px; margin-top:4px}
+.kb span{flex:1 1 auto; text-align:center; padding:7px 10px; background:#22303F; color:#6AB3F3; font-size:13px; border-radius:8px}
+.file{display:flex; align-items:center; gap:8px; margin-bottom:6px; padding-bottom:6px; border-bottom:1px solid rgba(255,255,255,.14)}
+.file i{width:30px; height:30px; border-radius:50%; background:#5288C1; display:grid; place-items:center; flex:none}
+.typing{display:none; align-self:flex-start; gap:4px; padding:12px 14px; background:#182533; border-radius:14px; border-bottom-left-radius:4px}
+.typing.on{display:flex}
+.typing i{width:6px; height:6px; border-radius:50%; background:#6D7F8F; animation:dot 1s infinite}
+.typing i:nth-child(2){animation-delay:.15s}.typing i:nth-child(3){animation-delay:.3s}
+@keyframes dot{0%,100%{opacity:.35; transform:translateY(0)}50%{opacity:1; transform:translateY(-3px)}}
+.ph-input{padding:11px 14px; color:#6D7F8F; background:#17212B; font-size:14px; border-top:1px solid #0A1018}
+.cap{font-size:14px; color:var(--muted2); text-align:center}
 
 /* секции */
 .band{background:var(--surface); border-top:1px solid var(--line2); border-bottom:1px solid var(--line2)}
 .section{padding-top:80px; padding-bottom:80px; display:flex; flex-direction:column; gap:36px}
-.sec-head{display:flex; flex-direction:column; gap:10px}
-.sec-head .mono span{color:var(--hot)}
 .grid{display:flex; flex-wrap:wrap; gap:20px}
-.tile{flex:1 1 240px; min-width:0; padding:26px; display:flex; flex-direction:column; gap:8px; background:var(--bg)}
-.tile .no{font-family:'IBM Plex Mono',monospace; font-weight:500; font-size:13px; color:var(--hot)}
-.ph{border:2px dashed var(--line2); color:var(--muted2); background:var(--bg)}
-.ph::before,.ph::after{display:none}
+.tile{flex:1 1 240px; min-width:0; padding:26px; display:flex; flex-direction:column; gap:10px; background:var(--bg); transition:box-shadow .2s ease}
+.ico{width:34px; height:34px; flex:none; color:var(--accent)}
+.tile.row{flex-direction:row; align-items:center; gap:16px; padding:18px 22px; flex-basis:300px}
+.tile.row h3{font-size:19px}
+@media (hover:hover){ .js .tile.rv.in:hover{transform:translateY(-4px); box-shadow:0 14px 30px var(--shadow); transition-delay:0s} }
 
-/* оплата */
+/* что вы получаете */
+.stack{position:relative; max-width:760px; width:100%}
+.stamp{position:relative; z-index:2}
+.stamp-head{padding:14px 20px; border-bottom:1px solid var(--line2)}
+.stamp-grid{display:flex; flex-wrap:wrap}
+.cell{flex:1 1 33%; min-width:200px; padding:16px 20px; border-bottom:1px solid var(--line); border-right:1px solid var(--line)}
+.cell .k{font-family:'IBM Plex Mono',monospace; font-weight:500; font-size:11px; letter-spacing:.08em; color:var(--muted2); text-transform:uppercase}
+.cell .v{font-size:18px; font-weight:600; line-height:1.3; margin-top:4px}
+.cell-full{flex:1 1 100%; border-right:0; border-bottom:0; background:var(--bg)}
+.cell-full .v{color:var(--accent); font-family:'IBM Plex Mono',monospace}
+.back{position:absolute; inset:0; z-index:0; background-color:var(--surface); border:1px solid var(--line2); border-radius:4px; box-shadow:0 14px 34px var(--shadow); transition:transform .35s ease}
+.back1{--rot:-2.4deg; --tx:-8px; --ty:8px; transform:rotate(var(--rot)) translate(var(--tx),var(--ty)); background-image:repeating-linear-gradient(transparent 0 23px,var(--line) 23px 24px)}
+.back2{--rot:2.2deg; --tx:10px; --ty:12px; transform:rotate(var(--rot)) translate(var(--tx),var(--ty)); background-image:linear-gradient(var(--grid2) 1px,transparent 1px),linear-gradient(90deg,var(--grid2) 1px,transparent 1px); background-size:16px 16px}
+.stack:hover .back1{--rot:-4.5deg; --tx:-18px; --ty:10px}
+.stack:hover .back2{--rot:4.2deg; --tx:20px; --ty:14px}
+
+/* оплата и шаги */
 .pay{display:flex; flex-direction:column; gap:10px}
-.bar{display:flex; height:60px; border:1.5px solid var(--btn); border-radius:4px; overflow:hidden; font-family:'IBM Plex Mono',monospace; font-weight:500; font-size:18px}
+.bar{display:flex; height:64px; border:1.5px solid var(--btn); border-radius:4px; overflow:hidden; font-family:'IBM Plex Mono',monospace; font-weight:500; font-size:19px}
+.js .bar{clip-path:inset(0 100% 0 0 round 4px); transition:clip-path 1.4s cubic-bezier(.2,.7,.2,1) .15s}
+.js .bar.in{clip-path:inset(0 0 0 0 round 4px)}
 .seg{display:flex; align-items:center; justify-content:center}
 .s1{flex:50; background:var(--btn); color:#FFFFFF}
 .s2{flex:20; background:repeating-linear-gradient(135deg,var(--btn) 0 2px,transparent 2px 9px),var(--surface); border-left:1.5px solid var(--btn); border-right:1.5px solid var(--btn)}
@@ -110,78 +185,64 @@ h3{font-size:20px; line-height:1.25; font-weight:600}
 .s3{flex:30; color:var(--ink); background:var(--surface)}
 .bar-labels{display:flex; font-size:14px; color:var(--muted2)}
 .bar-labels div:nth-child(1){flex:50}.bar-labels div:nth-child(2){flex:20}.bar-labels div:nth-child(3){flex:30}
-
-/* шаги */
 .steps{border-top:1px solid var(--line2)}
 .step{display:flex; gap:24px; padding:26px 0; border-bottom:1px solid var(--line); align-items:flex-start}
-.step .n{flex:none; width:56px; font-family:'IBM Plex Mono',monospace; font-weight:500; font-size:24px; color:var(--accent)}
+.step .n{flex:none; width:56px; font-family:'IBM Plex Mono',monospace; font-weight:500; font-size:26px; color:var(--accent)}
 .step h3{margin-bottom:4px}
+.js .step.rv{transform:translateX(-18px)}
+.js .step.rv.in{transform:none}
 
 /* вопросы */
 .faq{border-top:1px solid var(--line2)}
 details{border-bottom:1px solid var(--line)}
-summary{list-style:none; cursor:pointer; min-height:64px; display:flex; align-items:center; justify-content:space-between; gap:16px; font-weight:600; font-size:19px; padding:12px 0}
+summary{list-style:none; cursor:pointer; min-height:64px; display:flex; align-items:center; justify-content:space-between; gap:16px; font-weight:600; font-size:19px; padding:12px 0; transition:color .15s}
 summary::-webkit-details-marker{display:none}
-summary::after{content:"+"; font-family:'IBM Plex Mono',monospace; font-size:28px; color:var(--accent); flex:none; line-height:1}
-details[open] summary::after{content:"−"}
-details p{padding:0 0 22px; max-width:680px}
+summary::after{content:"+"; font-family:'IBM Plex Mono',monospace; font-size:28px; color:var(--accent); flex:none; line-height:1; transition:transform .25s ease}
+details[open] summary{color:var(--accent)}
+details[open] summary::after{transform:rotate(45deg)}
+details p{padding:0 0 22px; max-width:680px; animation:fade .3s ease}
+@keyframes fade{from{opacity:0; transform:translateY(-4px)}to{opacity:1; transform:none}}
 
 /* призыв */
-.cta{background-color:var(--band); color:#FFFFFF; position:relative;
-  background-image:linear-gradient(rgba(255,255,255,.06) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.06) 1px,transparent 1px);
-  background-size:24px 24px}
-.cta .wrap{padding-top:88px; padding-bottom:88px; display:flex; flex-direction:column; align-items:flex-start; gap:24px}
+.cta{background-color:var(--band); color:#FFFFFF; position:relative; overflow:hidden;
+  background-image:linear-gradient(rgba(255,255,255,.06) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.06) 1px,transparent 1px); background-size:24px 24px}
+.cta-in{padding-top:84px; padding-bottom:84px; display:flex; flex-wrap:wrap; align-items:center; justify-content:space-between; gap:40px}
+.cta-text{flex:1 1 420px; display:flex; flex-direction:column; align-items:flex-start; gap:24px}
 .cta h2{font-size:clamp(36px,6vw,64px); line-height:1.02}
 .cta p{font-size:20px; color:#D5DBE3; max-width:560px}
+.mascot{width:min(240px,56vw); height:auto; flex:none; margin:0 auto; animation:bob 4s ease-in-out infinite; filter:drop-shadow(0 18px 24px rgba(0,0,0,.45))}
+@keyframes bob{0%,100%{transform:translateY(0) rotate(-2deg)}50%{transform:translateY(-12px) rotate(2deg)}}
+.mascot .ball{transform-box:fill-box; transform-origin:center; animation:blink 2.2s ease-in-out infinite}
+@keyframes blink{0%,100%{transform:scale(1)}50%{transform:scale(1.45)}}
 .foot{padding-top:32px; padding-bottom:40px; font-size:15px; color:var(--muted2)}
-
-
-/* листы на фоне */
-.bg-sheets{position:fixed; inset:0; overflow:hidden; z-index:0; pointer-events:none}
-.page{position:relative; z-index:1}
-.sheet{position:absolute; width:clamp(150px,17vw,250px); aspect-ratio:210/297; background:var(--surface); color:var(--line2);
-  border:1px solid var(--line2); border-radius:3px; box-shadow:0 14px 34px rgba(11,20,36,.12); transform:rotate(var(--r,0deg)); will-change:transform}
-.sheet svg{display:block; width:100%; height:100%}
-.s-a{left:-3vw; top:16vh; --r:-8deg}
-.s-b{right:-3vw; top:9vh; --r:7deg}
-.s-c{left:3vw; top:64vh; --r:5deg}
-.s-d{right:4vw; top:60vh; --r:-6deg}
-@media (max-width:900px){
-  .s-a{left:-90px; top:30vh}
-  .s-b{right:-90px; top:10vh}
-  .s-c,.s-d{display:none}
-}
-
-/* стопка листов под карточкой */
-.stack{position:relative; flex:1 1 360px; min-width:0}
-.stamp{position:relative; z-index:2}
-.back{position:absolute; inset:0; z-index:0; background-color:var(--surface); border:1px solid var(--line2); border-radius:4px;
-  box-shadow:0 14px 34px rgba(11,20,36,.14); transition:transform .35s ease; animation:settle .8s ease both}
-.back1{--rot:-4deg; --tx:-10px; --ty:8px; transform:rotate(var(--rot)) translate(var(--tx),var(--ty));
-  background-image:repeating-linear-gradient(transparent 0 23px,var(--line) 23px 24px)}
-.back2{--rot:3.5deg; --tx:12px; --ty:12px; transform:rotate(var(--rot)) translate(var(--tx),var(--ty));
-  background-image:linear-gradient(var(--grid2) 1px,transparent 1px),linear-gradient(90deg,var(--grid2) 1px,transparent 1px); background-size:16px 16px; animation-delay:.12s}
-.stack:hover .back1{--rot:-7deg; --tx:-22px; --ty:10px}
-.stack:hover .back2{--rot:6.5deg; --tx:24px; --ty:14px}
-@keyframes settle{from{opacity:0; transform:rotate(0deg) translate(0,0)} to{opacity:1}}
-@media (prefers-reduced-motion: reduce){.back{animation:none; transition:none}}
 
 /* нижняя кнопка на телефоне */
 .mobile-cta{display:none}
 @media (max-width:720px){
-  .hero{gap:40px; padding-bottom:64px}
+  .hero{gap:36px; padding-bottom:64px}
   .section{padding-top:56px; padding-bottom:56px}
   .step{gap:16px}
-  .mobile-cta{display:flex; position:fixed; left:0; right:0; bottom:0; z-index:20; padding:12px 16px calc(12px + env(safe-area-inset-bottom,0px)); background:var(--surface); border-top:1px solid var(--line2)}
-  .mobile-cta .btn{flex:1}
-  body{padding-bottom:84px}
   .header .btn-small{display:none}
   .hero .row .btn{flex:1 1 100%}
   .bg-sheets{opacity:.35}
+  .cta-in{padding-top:56px; padding-bottom:56px}
+  .mobile-cta{display:flex; position:fixed; left:0; right:0; bottom:0; z-index:20; padding:12px 16px calc(12px + env(safe-area-inset-bottom,0px));
+    background:var(--surface); border-top:1px solid var(--line2); transition:transform .3s ease}
+  .mobile-cta.off{transform:translateY(110%)}
+  .mobile-cta .btn{flex:1}
+  body{padding-bottom:84px}
+}
+@media (prefers-reduced-motion: reduce){
+  html{scroll-behavior:auto}
+  *,*::before,*::after{animation:none !important; transition:none !important}
+  .js .rv{opacity:1; transform:none}
+  .js .bar{clip-path:none}
+  .hl{background-size:100% .09em}
 }
 </style>
 </head>
 <body>
+<div id="bar" aria-hidden="true"></div>
 <div class="bg-sheets" aria-hidden="true">
   <div class="sheet s-a" data-speed="0.14" data-rot="-8"><svg viewBox="0 0 210 297" fill="none" stroke="currentColor" stroke-width="1">
     <rect x="8" y="8" width="194" height="281"/><rect x="22" y="14" width="174" height="269"/>
@@ -216,106 +277,137 @@ details p{padding:0 0 22px; max-width:680px}
 </div>
 <div class="page">
 
-<div class="wrap header">
-  <div class="brand">
-    <svg width="38" height="38" aria-hidden="true" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
-<path d="M32 13V8" stroke="#60A0FF" stroke-width="3" stroke-linecap="round"/><circle cx="32" cy="6" r="3.4" fill="#FF9A62"/>
+<header class="wrap header">
+  <a class="brand" href="#top"><svg class="" width="40" height="40" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+<path d="M32 13V8" stroke="#60A0FF" stroke-width="3" stroke-linecap="round"/><circle class="ball" cx="32" cy="6" r="3.4" fill="#FF9A62"/>
 <rect x="3" y="29" width="6" height="15" rx="2.5" fill="#1E48BE"/><rect x="55" y="29" width="6" height="15" rx="2.5" fill="#1E48BE"/>
 <rect x="8" y="13" width="48" height="43" rx="13" fill="#2F63E0"/>
 <path d="M8 26a13 13 0 0 1 13-13h22a13 13 0 0 1 13 13z" fill="#5082F5"/>
 <rect x="14" y="22" width="36" height="28" rx="10" fill="#0B1424"/>
 <circle cx="25" cy="33" r="5.2" fill="#fff"/><circle cx="39" cy="33" r="5.2" fill="#fff"/>
-<circle cx="25.6" cy="34" r="2.7" fill="#2F63E0"/><circle cx="39.6" cy="34" r="2.7" fill="#2F63E0"/>
-<circle cx="26.4" cy="32.8" r="1" fill="#fff"/><circle cx="40.4" cy="32.8" r="1" fill="#fff"/>
+<circle cx="25.6" cy="34" r="2.7" fill="#2F63E0"/><circle cx="39.6" cy="34" r="2.7" fill="#2F63E0"/><circle cx="26.4" cy="32.8" r="1" fill="#fff"/><circle cx="40.4" cy="32.8" r="1" fill="#fff"/>
 <path d="M24 42.5q8 6 16 0" fill="none" stroke="#FF9A62" stroke-width="3" stroke-linecap="round"/>
 <circle cx="19.5" cy="42" r="1.9" fill="#FF9A62" opacity=".55"/><circle cx="44.5" cy="42" r="1.9" fill="#FF9A62" opacity=".55"/>
-</svg>
-    Решатор
-  </div>
+</svg>Решатор</a>
+  <nav class="nav" aria-label="Разделы"><a href="#get">Что входит</a><a href="#works">Работы</a><a href="#how">Как проходит заказ</a><a href="#faq">Вопросы</a></nav>
   <a class="btn btn-small" href="https://t.me/reshator_help_bot">Заказать в Telegram</a>
-</div>
+</header>
 
-<div class="wrap hero">
+<main id="top">
+<section class="wrap hero">
   <div class="hero-left">
-    <div class="mono">Математика · Физика · Механика · Графика · Информатика</div>
-    <h1>Решения и чертежи <span class="hl">по вашей методичке</span></h1>
-    <p class="lead">Выполняю учебные работы так, как требует ваш преподаватель: с рисунками и оформлением по образцу. Заказ и общение проходят в Telegram.</p>
-    <div class="row">
-      <a class="btn btn-main" href="https://t.me/reshator_help_bot">Оформить заказ в Telegram</a>
+    <h1 class="rv">Решения и чертежи <span class="hl">по вашей методичке</span></h1>
+    <p class="lead rv">Выполняю учебные работы так, как требует ваш преподаватель: с рисунками и оформлением по образцу. Заказ и общение проходят в Telegram.</p>
+    <div class="row rv">
+      <a class="btn btn-main" href="https://t.me/reshator_help_bot">Оформить заказ в Telegram <svg class="arr" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
       <a class="btn btn-line" href="#how">Как это работает</a>
     </div>
-    <div class="note">Стоимость называю после заявки. Отказаться можно без последствий.</div>
+    <div class="note rv">Стоимость называю после заявки. Отказаться можно без последствий.</div>
   </div>
 
-  <div class="stack"><div class="back back1"></div><div class="back back2"></div>
-  <div class="frame stamp">
-    <div class="stamp-head"><div class="mono">Что вы получаете</div></div>
-    <div class="stamp-grid">
-      <div class="cell"><div class="k">Формат</div><div class="v">PDF-файл</div></div>
-      <div class="cell"><div class="k">Структура</div><div class="v">Дано, Решение, Ответ</div></div>
-      <div class="cell"><div class="k">Оформление</div><div class="v">По вашей методичке</div></div>
-      <div class="cell"><div class="k">Рисунок</div><div class="v">Как в методичке</div></div>
-      <div class="cell"><div class="k">Пробный вариант</div><div class="v">До оплаты файла</div></div>
-      <div class="cell"><div class="k">Общение</div><div class="v">Прямо в Telegram</div></div>
-      <div class="cell cell-full"><div class="k">Оплата</div><div class="v">50% → 20% → 30%</div></div>
+  <div class="phone-wrap">
+    <div class="phone" role="img" aria-label="Пример диалога с ботом: выбор предмета, описание задания, срок сдачи и подтверждение заявки">
+      <div class="ph-head"><svg class="" width="36" height="36" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+<path d="M32 13V8" stroke="#60A0FF" stroke-width="3" stroke-linecap="round"/><circle class="ball" cx="32" cy="6" r="3.4" fill="#FF9A62"/>
+<rect x="3" y="29" width="6" height="15" rx="2.5" fill="#1E48BE"/><rect x="55" y="29" width="6" height="15" rx="2.5" fill="#1E48BE"/>
+<rect x="8" y="13" width="48" height="43" rx="13" fill="#2F63E0"/>
+<path d="M8 26a13 13 0 0 1 13-13h22a13 13 0 0 1 13 13z" fill="#5082F5"/>
+<rect x="14" y="22" width="36" height="28" rx="10" fill="#0B1424"/>
+<circle cx="25" cy="33" r="5.2" fill="#fff"/><circle cx="39" cy="33" r="5.2" fill="#fff"/>
+<circle cx="25.6" cy="34" r="2.7" fill="#2F63E0"/><circle cx="39.6" cy="34" r="2.7" fill="#2F63E0"/><circle cx="26.4" cy="32.8" r="1" fill="#fff"/><circle cx="40.4" cy="32.8" r="1" fill="#fff"/>
+<path d="M24 42.5q8 6 16 0" fill="none" stroke="#FF9A62" stroke-width="3" stroke-linecap="round"/>
+<circle cx="19.5" cy="42" r="1.9" fill="#FF9A62" opacity=".55"/><circle cx="44.5" cy="42" r="1.9" fill="#FF9A62" opacity=".55"/>
+</svg><div><b>Решатор</b><small>бот</small></div></div>
+      <div class="chat" id="chat" aria-hidden="true">
+        <div class="m bot"><div class="b">Здравствуйте! Помогу с учебными работами. Чем могу помочь?</div><div class="kb"><span>Новый заказ</span><span>Мои заказы</span></div></div>
+        <div class="m user"><div class="b">Новый заказ</div></div>
+        <div class="m bot"><div class="b">По какому предмету нужна работа?</div><div class="kb"><span>Физика</span><span>Сопротивление материалов</span><span>Информатика</span><span>Другое</span></div></div>
+        <div class="m user"><div class="b">Сопротивление материалов</div></div>
+        <div class="m bot"><div class="b">Опишите задание и пришлите методичку.</div></div>
+        <div class="m user"><div class="b"><div class="file"><i><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 3h7l5 5v13H7z"/></svg></i>методичка.pdf</div>Вариант 11, расчёт балки</div></div>
+        <div class="m bot"><div class="b">К какому сроку вам нужна работа?</div><div class="kb"><span>Завтра</span><span>Через 3 дня</span><span>Через неделю</span></div></div>
+        <div class="m user"><div class="b">Через 3 дня</div></div>
+        <div class="m bot"><div class="b">Благодарю! Заявка принята. Скоро вернусь с оценкой стоимости.</div></div>
+        <div class="typing"><i></i><i></i><i></i></div>
+      </div>
+      <div class="ph-input" aria-hidden="true">Сообщение</div>
     </div>
+    <div class="cap">Так выглядит заказ в боте</div>
   </div>
-  </div>
-</div>
+</section>
 
-<div class="band">
+<section class="band" id="get">
   <div class="wrap section">
-    <div class="sec-head"><div class="mono"><span>01</span> / Работы</div><h2>Какие работы делаю</h2></div>
-    <div class="grid">
-      <div class="frame tile" style="flex-basis:220px"><div class="no">A1</div><h3>Аналитическая геометрия</h3></div>
-      <div class="frame tile" style="flex-basis:220px"><div class="no">A2</div><h3>Инженерная графика</h3></div>
-      <div class="frame tile" style="flex-basis:220px"><div class="no">A3</div><h3>Интегралы и дифференциальные уравнения</h3></div>
-      <div class="frame tile" style="flex-basis:220px"><div class="no">A4</div><h3>Информатика</h3></div>
-      <div class="frame tile" style="flex-basis:220px"><div class="no">A5</div><h3>КИРТФКП</h3></div>
-      <div class="frame tile" style="flex-basis:220px"><div class="no">A6</div><h3>Линейная алгебра</h3></div>
-      <div class="frame tile" style="flex-basis:220px"><div class="no">A7</div><h3>Математический анализ</h3></div>
-      <div class="frame tile" style="flex-basis:220px"><div class="no">A8</div><h3>Материаловедение</h3></div>
-      <div class="frame tile" style="flex-basis:220px"><div class="no">A9</div><h3>Начертательная геометрия</h3></div>
-      <div class="frame tile" style="flex-basis:220px"><div class="no">A10</div><h3>Сопротивление материалов</h3></div>
-      <div class="frame tile" style="flex-basis:220px"><div class="no">A11</div><h3>Теоретическая механика</h3></div>
-      <div class="frame tile" style="flex-basis:220px"><div class="no">A12</div><h3>Физика</h3></div>
+    <h2 class="rv">Что вы получаете</h2>
+    <div class="stack rv">
+      <div class="back back1"></div><div class="back back2"></div>
+      <div class="frame stamp">
+        <div class="stamp-head"><div class="mono">Готовая работа</div></div>
+        <div class="stamp-grid">
+          <div class="cell"><div class="k">Формат</div><div class="v">PDF-файл</div></div>
+          <div class="cell"><div class="k">Структура</div><div class="v">Дано, Решение, Ответ</div></div>
+          <div class="cell"><div class="k">Оформление</div><div class="v">По вашей методичке</div></div>
+          <div class="cell"><div class="k">Рисунок</div><div class="v">Как в методичке</div></div>
+          <div class="cell"><div class="k">Пробный вариант</div><div class="v">До оплаты файла</div></div>
+          <div class="cell"><div class="k">Общение</div><div class="v">Прямо в Telegram</div></div>
+          <div class="cell cell-full"><div class="k">Оплата</div><div class="v">50% → 20% → 30%</div></div>
+        </div>
+      </div>
     </div>
-    <p class="muted">Нужен другой предмет? Напишите в Telegram, и я скажу, берусь ли.</p>
   </div>
-</div>
+</section>
 
-<div class="wrap section" id="how">
-  <div class="sec-head"><div class="mono"><span>02</span> / Порядок работы</div><h2>Как проходит заказ</h2></div>
-  <div class="pay" aria-label="Оплата тремя этапами: 50%, 20% и 30%">
-    <div class="bar"><div class="seg s1">50%</div><div class="seg s2"><span>20%</span></div><div class="seg s3">30%</div></div>
-    <div class="bar-labels"><div>Старт работы</div><div>Пробный вариант</div><div>После сдачи</div></div>
+<section class="wrap section" id="works">
+  <h2 class="rv">Какие работы делаю</h2>
+  <div class="grid">
+      <div class="frame tile row rv"><svg class="ico" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 4v22h22"/><path d="M6 24C12 24 15 9 28 6" style="stroke:var(--hot)"/><circle cx="17.5" cy="13" r="1.7" fill="currentColor"/></svg><h3>Аналитическая геометрия</h3></div>
+      <div class="frame tile row rv"><svg class="ico" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 4l11 6v12l-11 6-11-6V10z"/><path d="M5 10l11 6 11-6M16 16v12" style="stroke:var(--hot)"/></svg><h3>Инженерная графика</h3></div>
+      <div class="frame tile row rv"><svg class="ico" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 4c-2.6 0-3.8 1.6-3.8 4.6v14.8c0 3-1.2 4.6-3.8 4.6"/><path d="M8 21h4M20 11h4" style="stroke:var(--hot)"/></svg><h3>Интегралы и дифференциальные уравнения</h3></div>
+      <div class="frame tile row rv"><svg class="ico" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M11 9l-6 7 6 7M21 9l6 7-6 7"/><path d="M18 6l-4 20" style="stroke:var(--hot)"/></svg><h3>Информатика</h3></div>
+      <div class="frame tile row rv"><svg class="ico" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 16h26M16 3v26"/><circle cx="16" cy="16" r="9"/><path d="M16 16l6.4-6.4" style="stroke:var(--hot)"/><circle cx="22.4" cy="9.6" r="1.8" fill="var(--hot)" style="stroke:var(--hot)"/></svg><h3>КИРТФКП</h3></div>
+      <div class="frame tile row rv"><svg class="ico" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 5H6v22h4M22 5h4v22h-4"/><circle cx="12" cy="11" r="1.5" fill="currentColor"/><circle cx="16" cy="11" r="1.5" fill="currentColor"/><circle cx="20" cy="11" r="1.5" fill="currentColor"/><circle cx="12" cy="16" r="1.5" fill="currentColor"/><circle cx="16" cy="16" r="1.5" fill="var(--hot)" style="stroke:var(--hot)"/><circle cx="20" cy="16" r="1.5" fill="currentColor"/><circle cx="12" cy="21" r="1.5" fill="currentColor"/><circle cx="16" cy="21" r="1.5" fill="currentColor"/><circle cx="20" cy="21" r="1.5" fill="currentColor"/></svg><h3>Линейная алгебра</h3></div>
+      <div class="frame tile row rv"><svg class="ico" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 25C9 25 11 8 17 8s8 17 11 17"/><path d="M9 8h16" style="stroke:var(--hot)"/><circle cx="17" cy="8" r="1.8" fill="var(--hot)" style="stroke:var(--hot)"/></svg><h3>Математический анализ</h3></div>
+      <div class="frame tile row rv"><svg class="ico" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 12h12v12H8zM13 7h12v12H13z"/><path d="M8 12l5-5M20 12l5-5M20 24l5-5M8 24l5-5" style="stroke:var(--hot)"/><circle cx="8" cy="12" r="1.7" fill="currentColor"/><circle cx="20" cy="12" r="1.7" fill="currentColor"/><circle cx="8" cy="24" r="1.7" fill="currentColor"/><circle cx="20" cy="24" r="1.7" fill="currentColor"/><circle cx="13" cy="7" r="1.7" fill="currentColor"/><circle cx="25" cy="7" r="1.7" fill="currentColor"/><circle cx="25" cy="19" r="1.7" fill="currentColor"/></svg><h3>Материаловедение</h3></div>
+      <div class="frame tile row rv"><svg class="ico" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 16h26"/><circle cx="10" cy="8" r="1.8" fill="currentColor"/><circle cx="10" cy="24" r="1.8" fill="currentColor"/><circle cx="22" cy="11" r="1.8" fill="currentColor"/><circle cx="22" cy="21" r="1.8" fill="currentColor"/><path d="M10 10v12M22 13v6" stroke-dasharray="2 3" style="stroke:var(--hot)"/></svg><h3>Начертательная геометрия</h3></div>
+      <div class="frame tile row rv"><svg class="ico" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="15" width="24" height="4" rx="1"/><path d="M8 19l-3 7h6zM24 19l-3 7h6z"/><path d="M9 4v8M16 4v8M23 4v8M7 10l2 2 2-2M14 10l2 2 2-2M21 10l2 2 2-2" style="stroke:var(--hot)"/></svg><h3>Сопротивление материалов</h3></div>
+      <div class="frame tile row rv"><svg class="ico" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="16" cy="16" r="8"/><path d="M25.0 16.0L29.0 16.0M22.4 22.4L25.2 25.2M16.0 25.0L16.0 29.0M9.6 22.4L6.8 25.2M7.0 16.0L3.0 16.0M9.6 9.6L6.8 6.8M16.0 7.0L16.0 3.0M22.4 9.6L25.2 6.8" stroke-width="3.4"/><circle cx="16" cy="16" r="3" style="stroke:var(--hot)"/></svg><h3>Теоретическая механика</h3></div>
+      <div class="frame tile row rv"><svg class="ico" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><ellipse cx="16" cy="16" rx="12" ry="4.6"/><ellipse cx="16" cy="16" rx="12" ry="4.6" transform="rotate(60 16 16)"/><ellipse cx="16" cy="16" rx="12" ry="4.6" transform="rotate(120 16 16)"/><circle cx="16" cy="16" r="2.2" fill="var(--hot)" style="stroke:var(--hot)"/></svg><h3>Физика</h3></div>
   </div>
-  <div class="steps">
-    <div class="step"><div class="n">01</div><div><h3>Заявка в Telegram</h3><p class="muted">Выберите предмет, опишите задание, приложите методичку и укажите срок сдачи.</p></div></div>
-    <div class="step"><div class="n">02</div><div><h3>Стоимость</h3><p class="muted">Я называю цену. Если она не подходит, один раз можно предложить свою сумму.</p></div></div>
-    <div class="step"><div class="n">03</div><div><h3>50% → старт работы</h3><p class="muted">Вы вносите 50% стоимости, и я сразу берусь за работу.</p></div></div>
-    <div class="step"><div class="n">04</div><div><h3>20% → полный файл</h3><p class="muted">Когда работа готова, вы смотрите пробный вариант, вносите ещё 20% и получаете полный файл.</p></div></div>
-    <div class="step"><div class="n">05</div><div><h3>30% → после сдачи</h3><p class="muted">Вы сдаёте работу преподавателю и вносите оставшиеся 30% в течение 7 дней.</p></div></div>
-  </div>
-</div>
+  <p class="muted rv">Нужен другой предмет? Напишите в Telegram, и я скажу, берусь ли.</p>
+</section>
 
-<div class="band">
+<section class="band" id="how">
   <div class="wrap section">
-    <div class="sec-head"><div class="mono"><span>03</span> / Условия</div><h2>Спокойные условия</h2></div>
-    <div class="grid">
-      <div class="frame tile"><div class="no">3.1</div><h3>По вашей методичке</h3><p class="muted">Присылайте методичку и образец, оформление будет таким же.</p></div>
-      <div class="frame tile"><div class="no">3.2</div><h3>Исправления</h3><p class="muted">Если я допустил ошибку или преподаватель указал на неточность в решении, поправлю.</p></div>
-      <div class="frame tile"><div class="no">3.3</div><h3>Возврат при срыве срока</h3><p class="muted">Если не успею по своей вине, верну всё, что вы оплатили.</p></div>
-      <div class="frame tile"><div class="no">3.4</div><h3>Конфиденциальность</h3><p class="muted">Ваши данные и файлы остаются только между нами.</p></div>
+    <h2 class="rv">Как проходит заказ</h2>
+    <div class="pay" role="img" aria-label="Оплата тремя этапами: 50%, 20% и 30%">
+      <div class="bar"><div class="seg s1">50%</div><div class="seg s2"><span>20%</span></div><div class="seg s3">30%</div></div>
+      <div class="bar-labels"><div>Старт работы</div><div>Пробный вариант</div><div>После сдачи</div></div>
     </div>
-    <p class="muted">Полные правила доступны в боте, раздел «Правила».</p>
+    <div class="steps">
+      <div class="step rv"><div class="n">01</div><div><h3>Заявка в Telegram</h3><p class="muted">Выберите предмет, опишите задание, приложите методичку и укажите срок сдачи.</p></div></div>
+      <div class="step rv"><div class="n">02</div><div><h3>Стоимость</h3><p class="muted">Я называю цену. Если она не подходит, один раз можно предложить свою сумму.</p></div></div>
+      <div class="step rv"><div class="n">03</div><div><h3>50% → старт работы</h3><p class="muted">Вы вносите 50% стоимости, и я сразу берусь за работу.</p></div></div>
+      <div class="step rv"><div class="n">04</div><div><h3>20% → полный файл</h3><p class="muted">Когда работа готова, вы смотрите пробный вариант, вносите ещё 20% и получаете полный файл.</p></div></div>
+      <div class="step rv"><div class="n">05</div><div><h3>30% → после сдачи</h3><p class="muted">Вы сдаёте работу преподавателю и вносите оставшиеся 30% в течение 7 дней.</p></div></div>
+    </div>
   </div>
-</div>
+</section>
 
-<div class="band">
+<section class="wrap section">
+  <h2 class="rv">Спокойные условия</h2>
+  <div class="grid">
+      <div class="frame tile rv"><svg class="ico" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 4h11l5 5v19H8z"/><path d="M19 4v5h5"/><path d="M12 16h8M12 21h8M12 26h5" style="stroke:var(--hot)"/></svg><h3>По вашей методичке</h3><p class="muted">Присылайте методичку и образец, оформление будет таким же.</p></div>
+      <div class="frame tile rv"><svg class="ico" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 27l1.2-6.3L21 6l5 5L11.3 25.8z"/><path d="M18 9l5 5" style="stroke:var(--hot)"/></svg><h3>Исправления</h3><p class="muted">Если я допустил ошибку или преподаватель указал на неточность в решении, поправлю.</p></div>
+      <div class="frame tile rv"><svg class="ico" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5.5 16A10.5 10.5 0 1 0 9 8.2"/><path d="M5 4.5V10h5.5"/><path d="M16 10v6l4 3" style="stroke:var(--hot)"/></svg><h3>Возврат при срыве срока</h3><p class="muted">Если не успею по своей вине, верну всё, что вы оплатили.</p></div>
+      <div class="frame tile rv"><svg class="ico" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="7" y="14" width="18" height="13" rx="2"/><path d="M11 14v-4a5 5 0 0 1 10 0v4"/><circle cx="16" cy="20.5" r="1.9" fill="var(--hot)" style="stroke:var(--hot)"/></svg><h3>Конфиденциальность</h3><p class="muted">Ваши данные и файлы остаются только между нами.</p></div>
+  </div>
+  <p class="muted rv">Полные правила доступны в боте, раздел «Правила».</p>
+</section>
+
+<section class="band" id="faq">
   <div class="wrap section" style="max-width:860px">
-    <div class="sec-head"><div class="mono"><span>04</span> / Вопросы</div><h2>Частые вопросы</h2></div>
-    <div class="faq">
+    <h2 class="rv">Частые вопросы</h2>
+    <div class="faq rv">
       <details><summary>Сколько это стоит?</summary><p class="muted">Цена зависит от предмета, объёма и срока. Я называю её после заявки, и вы вправе отказаться без последствий.</p></details>
       <details><summary>Как быстро вы делаете работу?</summary><p class="muted">Срок обсуждается в заявке. Срочные работы (менее суток) могут стоить немного дороже.</p></details>
       <details><summary>Могу ли я увидеть результат до полной оплаты?</summary><p class="muted">Да. Когда работа готова, вы получаете пробный вариант, а полный файл приходит после оплаты ещё 20%.</p></details>
@@ -323,40 +415,113 @@ details p{padding:0 0 22px; max-width:680px}
       <details><summary>Что, если преподаватель попросит исправить?</summary><p class="muted">Поправлю, если это моя ошибка или замечание к решению. Если изменилось задание, это уже новая работа, и мы вместе обсудим её цену.</p></details>
     </div>
   </div>
-</div>
+</section>
 
-<div class="cta">
-  <div class="wrap">
-    <h2>Готовы начать?</h2>
-    <p>Оформление заявки занимает пару минут. Стоимость я назову в ответ, а решать вам.</p>
-    <a class="btn btn-light" href="https://t.me/reshator_help_bot">Открыть бота в Telegram</a>
+<section class="cta">
+  <div class="wrap cta-in">
+    <div class="cta-text">
+      <h2>Готовы начать?</h2>
+      <p>Оформление заявки занимает пару минут. Стоимость я назову в ответ, а решать вам.</p>
+      <a class="btn btn-light" href="https://t.me/reshator_help_bot">Открыть бота в Telegram <svg class="arr" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+    </div>
+    <svg class="mascot" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+<path d="M32 13V8" stroke="#60A0FF" stroke-width="3" stroke-linecap="round"/><circle class="ball" cx="32" cy="6" r="3.4" fill="#FF9A62"/>
+<rect x="3" y="29" width="6" height="15" rx="2.5" fill="#1E48BE"/><rect x="55" y="29" width="6" height="15" rx="2.5" fill="#1E48BE"/>
+<rect x="8" y="13" width="48" height="43" rx="13" fill="#2F63E0"/>
+<path d="M8 26a13 13 0 0 1 13-13h22a13 13 0 0 1 13 13z" fill="#5082F5"/>
+<rect x="14" y="22" width="36" height="28" rx="10" fill="#0B1424"/>
+<circle cx="25" cy="33" r="5.2" fill="#fff"/><circle cx="39" cy="33" r="5.2" fill="#fff"/>
+<g class="pupil"><circle cx="25.6" cy="34" r="2.7" fill="#2F63E0"/><circle cx="26.4" cy="32.8" r="1" fill="#fff"/></g><g class="pupil"><circle cx="39.6" cy="34" r="2.7" fill="#2F63E0"/><circle cx="40.4" cy="32.8" r="1" fill="#fff"/></g>
+<path d="M24 42.5q8 6 16 0" fill="none" stroke="#FF9A62" stroke-width="3" stroke-linecap="round"/>
+<circle cx="19.5" cy="42" r="1.9" fill="#FF9A62" opacity=".55"/><circle cx="44.5" cy="42" r="1.9" fill="#FF9A62" opacity=".55"/>
+</svg>
   </div>
-</div>
+</section>
+</main>
 
-<div class="wrap foot">Правила и условия работы доступны в боте, раздел «Правила».</div>
+<footer class="wrap foot">Правила и условия работы доступны в боте, раздел «Правила».</footer>
 
 <div class="mobile-cta"><a class="btn btn-main" href="https://t.me/reshator_help_bot">Заказать в Telegram</a></div>
 
 </div>
 <script>
 (function () {
-  var els = Array.prototype.slice.call(document.querySelectorAll('.bg-sheets .sheet'));
-  function set(y) {
-    els.forEach(function (el) {
-      var sp = parseFloat(el.getAttribute('data-speed')) || 0;
-      var r = parseFloat(el.getAttribute('data-rot')) || 0;
+  var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var $ = function (s, r) { return [].slice.call((r || document).querySelectorAll(s)); };
+
+  // появление блоков при прокрутке
+  $('.grid, .steps, .faq, .hero-left').forEach(function (g) {
+    $('.rv', g).forEach(function (el, i) { el.style.setProperty('--i', i % 6); });
+  });
+  var rv = $('.rv, .bar');
+  if ('IntersectionObserver' in window && !reduce) {
+    var io = new IntersectionObserver(function (es) {
+      es.forEach(function (e) { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
+    }, { threshold: 0.12 });
+    rv.forEach(function (el) { io.observe(el); });
+  } else { rv.forEach(function (el) { el.classList.add('in'); }); }
+
+  // полоса прогресса и листы на фоне
+  var bar = document.getElementById('bar');
+  var sheets = $('.bg-sheets .sheet');
+  function setSheets(y) {
+    sheets.forEach(function (el) {
+      var sp = parseFloat(el.getAttribute('data-speed')) || 0, r = parseFloat(el.getAttribute('data-rot')) || 0;
       el.style.transform = 'translate3d(0,' + (-y * sp).toFixed(1) + 'px,0) rotate(' + r + 'deg)';
     });
   }
-  var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-  set(0);
-  if (reduce) return;
+  function onScroll() {
+    var y = window.pageYOffset || 0, h = document.documentElement.scrollHeight - window.innerHeight;
+    bar.style.transform = 'scaleX(' + (h > 0 ? Math.min(1, y / h) : 0).toFixed(4) + ')';
+    if (!reduce) setSheets(y);
+  }
+  setSheets(0); onScroll();
   var busy = false;
   window.addEventListener('scroll', function () {
-    if (busy) return;
-    busy = true;
-    window.requestAnimationFrame(function () { set(window.pageYOffset || 0); busy = false; });
+    if (busy) return; busy = true;
+    window.requestAnimationFrame(function () { onScroll(); busy = false; });
   }, { passive: true });
+
+  // нижняя кнопка скрывается у финального блока
+  var mcta = document.querySelector('.mobile-cta'), cta = document.querySelector('.cta');
+  if (mcta && cta && 'IntersectionObserver' in window) {
+    new IntersectionObserver(function (es) { mcta.classList.toggle('off', es[0].isIntersecting); }).observe(cta);
+  }
+
+  // диалог с ботом
+  var chat = document.getElementById('chat');
+  if (chat) {
+    var msgs = $('.m', chat), typing = chat.querySelector('.typing'), i = 0, timers = [], started = false;
+    var later = function (fn, ms) { timers.push(setTimeout(fn, ms)); };
+    if (reduce) { chat.classList.add('static'); }
+    else {
+      var show = function (m) { m.classList.add('vis'); i++; later(next, m.classList.contains('user') ? 700 : 1700); };
+      var next = function () {
+        if (i >= msgs.length) { later(restart, 5000); return; }
+        var m = msgs[i];
+        if (m.classList.contains('bot')) {
+          typing.classList.add('on');
+          later(function () { typing.classList.remove('on'); show(m); }, 900);
+        } else { show(m); }
+      };
+      var restart = function () { msgs.forEach(function (m) { m.classList.remove('vis'); }); i = 0; later(next, 700); };
+      var start = function () { if (!started) { started = true; later(next, 500); } };
+      if ('IntersectionObserver' in window) {
+        new IntersectionObserver(function (es) { if (es[0].isIntersecting) start(); }, { threshold: 0.3 }).observe(chat);
+      } else { start(); }
+    }
+  }
+
+  // глаза робота следят за курсором
+  var pupils = $('.mascot .pupil'), mascot = document.querySelector('.mascot');
+  if (pupils.length && mascot && !reduce && window.matchMedia && window.matchMedia('(hover:hover)').matches) {
+    window.addEventListener('pointermove', function (e) {
+      var r = mascot.getBoundingClientRect();
+      var dx = e.clientX - (r.left + r.width / 2), dy = e.clientY - (r.top + r.height / 2);
+      var d = Math.sqrt(dx * dx + dy * dy) || 1, k = Math.min(1, d / 300) * 1.7;
+      pupils.forEach(function (p) { p.setAttribute('transform', 'translate(' + (dx / d * k).toFixed(2) + ' ' + (dy / d * k).toFixed(2) + ')'); });
+    }, { passive: true });
+  }
 })();
 </script>
 </body>
