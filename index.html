@@ -182,6 +182,8 @@ h3{font-size:20px; line-height:1.25; font-weight:600}
 .js .step.rv{transform:translateX(-18px)}
 .js .step.rv.in{transform:none}
 
+.pct{font-family:'IBM Plex Mono',monospace; font-weight:500; font-size:34px; color:var(--accent); line-height:1}
+
 /* вопросы */
 .faq{border-top:1px solid var(--line2)}
 details{border-bottom:1px solid var(--line)}
@@ -278,7 +280,7 @@ details p{padding:0 0 22px; max-width:680px; animation:fade .3s ease}
 <path d="M24 42.5q8 6 16 0" fill="none" stroke="#FF9A62" stroke-width="3" stroke-linecap="round"/>
 <circle cx="19.5" cy="42" r="1.9" fill="#FF9A62" opacity=".55"/><circle cx="44.5" cy="42" r="1.9" fill="#FF9A62" opacity=".55"/>
 </svg>Решатор</a>
-  <nav class="nav" aria-label="Разделы"><a href="#get">Что входит</a><a href="#works">Работы</a><a href="#how">Как проходит заказ</a><a href="#faq">Вопросы</a></nav>
+  <nav class="nav" aria-label="Разделы"><a href="#get">Что входит</a><a href="#works">Работы</a><a href="#how">Как проходит заказ</a><a href="#discounts">Скидки</a><a href="#faq">Вопросы</a></nav>
   <a class="btn btn-small" href="https://t.me/reshator_help_bot">Заказать в Telegram</a>
 </header>
 
@@ -382,6 +384,21 @@ details p{padding:0 0 22px; max-width:680px; animation:fade .3s ease}
   </div>
 </section>
 
+<section class="wrap section" id="discounts">
+  <h2 class="rv">Скидки</h2>
+  <p class="muted rv">Чем больше выполненных заказов, тем выше ваш статус и скидка. А ещё скидка за друзей.</p>
+  <div class="grid">
+      <div class="frame tile rv"><div class="pct">0%</div><h3>Новичок</h3><p class="muted">первый заказ</p></div>
+      <div class="frame tile rv"><div class="pct">3%</div><h3>Клиент</h3><p class="muted">от 1 заказа</p></div>
+      <div class="frame tile rv"><div class="pct">5%</div><h3>Постоянный клиент</h3><p class="muted">от 3 заказов</p></div>
+      <div class="frame tile rv"><div class="pct">8%</div><h3>Проверенный клиент</h3><p class="muted">от 6 заказов</p></div>
+      <div class="frame tile rv"><div class="pct">10%</div><h3>Партнёр</h3><p class="muted">от 10 заказов</p></div>
+  </div>
+  <div class="frame tile rv"><div class="pct">15%</div><h3>Скидка за друга</h3>
+    <p class="muted">Друг пришёл по вашей ссылке, оформил заказ и оплатил 70%. Вам 15% на один заказ, скидка действует 30 дней. Один друг, один заказ. Ссылку на приглашение найдёте в боте: «Профиль», затем «Пригласить друга».</p></div>
+  <p class="muted rv">Скидки не суммируются выше 25% на один заказ. Если вы предложили свою сумму и она принята, скидки не применяются.</p>
+</section>
+
 <section class="wrap section">
   <h2 class="rv">Спокойные условия</h2>
   <div class="grid">
@@ -398,6 +415,7 @@ details p{padding:0 0 22px; max-width:680px; animation:fade .3s ease}
     <h2 class="rv">Частые вопросы</h2>
     <div class="faq rv">
       <details><summary>Сколько это стоит?</summary><p class="muted">Цена зависит от предмета, объёма и срока. Я называю её после заявки, и вы вправе отказаться без последствий.</p></details>
+      <details><summary>Есть ли скидки?</summary><p class="muted">Да. За выполненные заказы растёт статус и скидка (Клиент 3%, Постоянный клиент 5%, Проверенный клиент 8%, Партнёр 10%), а за каждого друга, который оформил заказ и оплатил 70%, вам скидка 15% на один заказ (действует 30 дней). Скидки не складываются выше 25% на один заказ.</p></details>
       <details><summary>Как быстро вы делаете работу?</summary><p class="muted">Срок обсуждается в заявке. Срочные работы (менее суток) могут стоить немного дороже.</p></details>
       <details><summary>Могу ли я увидеть результат до полной оплаты?</summary><p class="muted">Да. Когда работа готова, вы получаете пробный вариант, а полный файл приходит после оплаты ещё 20%.</p></details>
       <details><summary>Вы гарантируете оценку?</summary><p class="muted">Нет. Я отвечаю за верность решения и аккуратное оформление, а оценку ставит преподаватель.</p></details>
@@ -428,7 +446,7 @@ details p{padding:0 0 22px; max-width:680px; animation:fade .3s ease}
 </section>
 </main>
 
-<footer class="wrap foot">Правила и условия работы доступны в боте, раздел «Правила».</footer>
+<footer class="wrap foot">Правила и условия работы доступны в боте, раздел «Правила». · <a href="offer.html">Оферта, оплата и конфиденциальность</a> · <a href="offer.html#contacts">Контакты</a></footer>
 
 <div class="mobile-cta"><a class="btn btn-main" href="https://t.me/reshator_help_bot">Заказать в Telegram</a></div>
 
