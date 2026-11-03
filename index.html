@@ -41,6 +41,7 @@ h1,h2{font-family:'IBM Plex Sans Condensed','IBM Plex Sans',sans-serif; letter-s
 h1{font-size:clamp(42px,7vw,76px); line-height:1.02; font-weight:700}
 h2{font-size:clamp(32px,4.6vw,46px); line-height:1.08; font-weight:700}
 h3{font-size:20px; line-height:1.25; font-weight:600}
+.tile:not(.row) h3{font-size:17px; overflow-wrap:anywhere}
 .muted{color:var(--muted)}
 
 /* прогресс чтения */
@@ -138,9 +139,9 @@ h3{font-size:20px; line-height:1.25; font-weight:600}
 
 /* секции */
 .band{background:var(--surface); border-top:1px solid var(--line2); border-bottom:1px solid var(--line2)}
-.section{padding-top:80px; padding-bottom:80px; display:flex; flex-direction:column; gap:36px}
+.section{padding-top:64px; padding-bottom:64px; display:flex; flex-direction:column; gap:28px}
 .grid{display:flex; flex-wrap:wrap; gap:20px}
-.tile{flex:1 1 240px; min-width:0; padding:26px; display:flex; flex-direction:column; gap:10px; background:var(--bg); transition:box-shadow .2s ease}
+.tile{flex:1 1 240px; min-width:0; padding:24px 22px; display:flex; flex-direction:column; gap:10px; background:var(--bg); transition:box-shadow .2s ease}
 .ico{width:34px; height:34px; flex:none; color:var(--accent)}
 .tile.row{display:grid; grid-template-columns:34px minmax(0,1fr); align-items:center; column-gap:16px; padding:18px 22px; flex-basis:300px}
 .tile.row .ico{grid-column:1}
@@ -176,9 +177,9 @@ h3{font-size:20px; line-height:1.25; font-weight:600}
 .bar-labels{display:flex; font-size:14px; color:var(--muted2)}
 .bar-labels div:nth-child(1){flex:50}.bar-labels div:nth-child(2){flex:20}.bar-labels div:nth-child(3){flex:30}
 .steps{border-top:1px solid var(--line2)}
-.step{display:flex; gap:24px; padding:26px 0; border-bottom:1px solid var(--line); align-items:flex-start}
+.step{display:flex; gap:24px; padding:20px 0; border-bottom:1px solid var(--line); align-items:center}
 .step .n{flex:none; width:56px; font-family:'IBM Plex Mono',monospace; font-weight:500; font-size:26px; color:var(--accent)}
-.step h3{margin-bottom:4px}
+.step h3{margin:0; font-size:20px}
 .js .step.rv{transform:translateX(-18px)}
 .js .step.rv.in{transform:none}
 
@@ -212,7 +213,7 @@ details p{padding:0 0 22px; max-width:680px; animation:fade .3s ease}
 .mobile-cta{display:none}
 @media (max-width:720px){
   .hero{gap:36px; padding-bottom:64px}
-  .section{padding-top:56px; padding-bottom:56px}
+  .section{padding-top:44px; padding-bottom:44px}
   .step{gap:16px}
   .header .btn-small{display:none}
   .hero .row .btn{flex:1 1 100%}
@@ -347,7 +348,7 @@ details p{padding:0 0 22px; max-width:680px; animation:fade .3s ease}
 </section>
 
 <section class="wrap section" id="works">
-  <h2 class="rv">Какие работы делаю</h2>
+  <h2 class="rv">Какие работы делаем</h2>
   <div class="grid">
       <div class="frame tile row rv"><svg class="ico" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 4v22h22"/><path d="M6 24C12 24 15 9 28 6" style="stroke:var(--hot)"/><circle cx="17.5" cy="13" r="1.7" fill="currentColor"/></svg><h3>Аналитическая геометрия</h3></div>
       <div class="frame tile row rv"><svg class="ico" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 4l11 6v12l-11 6-11-6V10z"/><path d="M5 10l11 6 11-6M16 16v12" style="stroke:var(--hot)"/></svg><h3>Инженерная графика</h3></div>
@@ -368,9 +369,6 @@ details p{padding:0 0 22px; max-width:680px; animation:fade .3s ease}
 <section class="band" id="how">
   <div class="wrap section">
     <h2 class="rv">Как проходит заказ</h2>
-    <div class="pay" role="img" aria-label="Оплата 100% до начала работы, файл сразу после выполнения">
-      <div class="bar"><div class="seg s1">100%</div></div>
-    </div>
     <div class="steps">
       <div class="step rv"><div class="n">01</div><div><h3>Заявка в Telegram</h3></div></div>
       <div class="step rv"><div class="n">02</div><div><h3>Стоимость</h3></div></div>
@@ -384,16 +382,17 @@ details p{padding:0 0 22px; max-width:680px; animation:fade .3s ease}
 <section class="wrap section" id="discounts">
   <h2 class="rv">Скидки</h2>
   <div class="grid">
-      <div class="frame tile rv"><div class="pct">0%</div><h3>Новичок</h3><p class="muted">первый заказ</p></div>
       <div class="frame tile rv"><div class="pct">3%</div><h3>Клиент</h3><p class="muted">от 1 заказа</p></div>
       <div class="frame tile rv"><div class="pct">5%</div><h3>Постоянный клиент</h3><p class="muted">от 3 заказов</p></div>
       <div class="frame tile rv"><div class="pct">8%</div><h3>Проверенный клиент</h3><p class="muted">от 6 заказов</p></div>
       <div class="frame tile rv"><div class="pct">10%</div><h3>Партнёр</h3><p class="muted">от 10 заказов</p></div>
   </div>
+  <div class="grid">
   <div class="frame tile rv"><div class="pct">15%</div><h3>Скидка за друга</h3>
     <p class="muted">Друг пришёл по вашей ссылке, оформил заказ и оплатил его. Вам 15% на один заказ, скидка действует 30 дней.</p></div>
   <div class="frame tile rv"><div class="pct">до 100%</div><h3>Розыгрыши скидок</h3>
     <p class="muted">Разыгрываем скидки в <a href="https://t.me/reshator_news">нашем канале</a>. Победителям скидка на один заказ.</p></div>
+  </div>
 </section>
 
 <section class="wrap section" id="reviews">
@@ -409,7 +408,7 @@ details p{padding:0 0 22px; max-width:680px; animation:fade .3s ease}
       <div class="frame tile rv"><svg class="ico" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 4h11l5 5v19H8z"/><path d="M19 4v5h5"/><path d="M12 16h8M12 21h8M12 26h5" style="stroke:var(--hot)"/></svg><h3>Под ваши требования</h3><p class="muted">Присылайте образец и требования преподавателя, оформление будет таким же.</p></div>
       <div class="frame tile rv"><svg class="ico" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 27l1.2-6.3L21 6l5 5L11.3 25.8z"/><path d="M18 9l5 5" style="stroke:var(--hot)"/></svg><h3>Исправления</h3><p class="muted">Если мы допустили ошибку или преподаватель указал на неточность в решении, поправим.</p></div>
       <div class="frame tile rv"><svg class="ico" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5.5 16A10.5 10.5 0 1 0 9 8.2"/><path d="M5 4.5V10h5.5"/><path d="M16 10v6l4 3" style="stroke:var(--hot)"/></svg><h3>Возврат при срыве срока</h3><p class="muted">Если не успеем по своей вине, вернём всё, что вы оплатили.</p></div>
-      <div class="frame tile rv"><svg class="ico" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="7" y="14" width="18" height="13" rx="2"/><path d="M11 14v-4a5 5 0 0 1 10 0v4"/><circle cx="16" cy="20.5" r="1.9" fill="var(--hot)" style="stroke:var(--hot)"/></svg><h3>Конфиденциальность</h3><p class="muted">Ваши данные и файлы остаются только между нами.</p></div>
+      <div class="frame tile rv"><svg class="ico" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="7" y="14" width="18" height="13" rx="2"/><path d="M11 14v-4a5 5 0 0 1 10 0v4"/><circle cx="16" cy="20.5" r="1.9" fill="var(--hot)" style="stroke:var(--hot)"/></svg><h3>Данные в тайне</h3><p class="muted">Ваши данные и файлы остаются только между нами.</p></div>
   </div>
 </section>
 
@@ -449,7 +448,7 @@ details p{padding:0 0 22px; max-width:680px; animation:fade .3s ease}
 </section>
 </main>
 
-<footer class="wrap foot">Правила и условия работы доступны в боте, раздел «Правила». · <a href="offer.html">Пользовательское соглашение</a> · <a href="privacy.html">Политика конфиденциальности</a> · <a href="offer.html#contacts">Контакты</a></footer>
+<footer class="wrap foot"><a href="offer.html">Пользовательское соглашение</a> · <a href="privacy.html">Политика конфиденциальности</a> · <a href="offer.html#contacts">Контакты</a></footer>
 
 <div class="mobile-cta"><a class="btn btn-main" href="https://t.me/reshator_help_bot">Заказать в Telegram</a></div>
 

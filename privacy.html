@@ -34,6 +34,7 @@ h1,h2{font-family:'IBM Plex Sans Condensed','IBM Plex Sans',sans-serif; letter-s
 h1{font-size:clamp(42px,7vw,76px); line-height:1.02; font-weight:700}
 h2{font-size:clamp(32px,4.6vw,46px); line-height:1.08; font-weight:700}
 h3{font-size:20px; line-height:1.25; font-weight:600}
+.tile:not(.row) h3{font-size:17px; overflow-wrap:anywhere}
 .muted{color:var(--muted)}
 
 /* прогресс чтения */
@@ -131,9 +132,9 @@ h3{font-size:20px; line-height:1.25; font-weight:600}
 
 /* секции */
 .band{background:var(--surface); border-top:1px solid var(--line2); border-bottom:1px solid var(--line2)}
-.section{padding-top:80px; padding-bottom:80px; display:flex; flex-direction:column; gap:36px}
+.section{padding-top:64px; padding-bottom:64px; display:flex; flex-direction:column; gap:28px}
 .grid{display:flex; flex-wrap:wrap; gap:20px}
-.tile{flex:1 1 240px; min-width:0; padding:26px; display:flex; flex-direction:column; gap:10px; background:var(--bg); transition:box-shadow .2s ease}
+.tile{flex:1 1 240px; min-width:0; padding:24px 22px; display:flex; flex-direction:column; gap:10px; background:var(--bg); transition:box-shadow .2s ease}
 .ico{width:34px; height:34px; flex:none; color:var(--accent)}
 .tile.row{display:grid; grid-template-columns:34px minmax(0,1fr); align-items:center; column-gap:16px; padding:18px 22px; flex-basis:300px}
 .tile.row .ico{grid-column:1}
@@ -169,9 +170,9 @@ h3{font-size:20px; line-height:1.25; font-weight:600}
 .bar-labels{display:flex; font-size:14px; color:var(--muted2)}
 .bar-labels div:nth-child(1){flex:50}.bar-labels div:nth-child(2){flex:20}.bar-labels div:nth-child(3){flex:30}
 .steps{border-top:1px solid var(--line2)}
-.step{display:flex; gap:24px; padding:26px 0; border-bottom:1px solid var(--line); align-items:flex-start}
+.step{display:flex; gap:24px; padding:20px 0; border-bottom:1px solid var(--line); align-items:center}
 .step .n{flex:none; width:56px; font-family:'IBM Plex Mono',monospace; font-weight:500; font-size:26px; color:var(--accent)}
-.step h3{margin-bottom:4px}
+.step h3{margin:0; font-size:20px}
 .js .step.rv{transform:translateX(-18px)}
 .js .step.rv.in{transform:none}
 
@@ -205,7 +206,7 @@ details p{padding:0 0 22px; max-width:680px; animation:fade .3s ease}
 .mobile-cta{display:none}
 @media (max-width:720px){
   .hero{gap:36px; padding-bottom:64px}
-  .section{padding-top:56px; padding-bottom:56px}
+  .section{padding-top:44px; padding-bottom:44px}
   .step{gap:16px}
   .header .btn-small{display:none}
   .hero .row .btn{flex:1 1 100%}
@@ -275,7 +276,7 @@ body{padding-bottom:0 !important}
 <p class="c"><span class="no">3.1</span>Принять и выполнить заказ, связаться с пользователем, выдать файл.</p>
 <p class="c"><span class="no">3.2</span>Принять оплату, вести баланс, выдать чек, вести учёт доходов и выполнять требования закона.</p>
 <p class="c"><span class="no">3.3</span>Применять скидки, статусы и реферальную программу.</p>
-<p class="c"><span class="no">3.4</span>Публиковать отзыв в канале отзывов: только с отдельного разрешения пользователя и анонимно.</p>
+<p class="c"><span class="no">3.4</span>Публиковать отзыв в канале отзывов: только с отдельного разрешения пользователя. Сообщение пересылается как есть, с именем из Telegram.</p>
 <p class="c"><span class="no">3.5</span>Защищать сервис от злоупотреблений, в том числе ограничивать доступ нарушителям.</p>
 
 <h2>4. Хранение и защита</h2>
